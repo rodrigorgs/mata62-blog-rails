@@ -1,6 +1,7 @@
 # README
 
 [![Code Climate](https://codeclimate.com/github/rodrigorgs/blog/badges/gpa.svg)](https://codeclimate.com/github/rodrigorgs/blog)
+[![Build Status](https://travis-ci.org/rodrigorgs/blog.svg?branch=master)](https://travis-ci.org/rodrigorgs/blog)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
