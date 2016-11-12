@@ -35,6 +35,12 @@ group :development, :test do
   
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'database_cleaner'
 end
 
 group :development do
