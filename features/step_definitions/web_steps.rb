@@ -11,6 +11,21 @@ require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "pat
 # Commonly used webrat steps
 # http://github.com/brynary/webrat
 
+Dado /^que eu não estou autenticado$/ do
+  visit '/users/sign_out'
+end
+
+Dado /^que eu estou autenticado$/ do
+  email = 'testing@man.net'
+  password = 'secretpass'
+  User.new(:email => email, :password => password, :password_confirmation => password).save!
+
+  visit '/users/sign_in'
+  fill_in "user_email", :with => email
+  fill_in "user_password", :with => password
+  click_button "Log in"
+end
+
 Dado /^que eu estou na página "(.+)"$/ do |page_name|
   visit path_to(page_name)
 end
