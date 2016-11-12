@@ -23,7 +23,7 @@ module NavigationHelpers
 			new_post_path
 
 		when "Show Post"
-			'/posts/1'
+			%r{/posts/\d+}
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
