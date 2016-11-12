@@ -12,7 +12,7 @@
 
 <p>
   <strong>Capa:</strong>
-  <%= image_tag @post.capa.url %>
+  <%= image_tag @post.capa.url if @post.capa.present? %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
