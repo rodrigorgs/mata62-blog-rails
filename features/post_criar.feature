@@ -17,6 +17,6 @@ Cenário: Criar post válido
     | Corpo  | Oi, mundo |
   E eu clicar no botão "Criar Post"
 
-  Então eu devo estar na página "Show Post"
+  Então a URL deve conter "/posts/"
   E eu devo ver "Saudacao"
   E eu devo ver "Oi, mundo"

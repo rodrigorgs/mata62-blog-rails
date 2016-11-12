@@ -255,6 +255,10 @@ Então /^eu devo (?:estar na|ir para a) página "(.+)"$/ do |page_name|
   end
 end
 
+Então /^a URL deve conter "(.+)"$/ do |prefixo|
+  assert_match /#{prefixo}/, URI.parse(current_url).path
+end
+
 Então /^mostre-me a página$/ do
   save_and_open_page
 end
